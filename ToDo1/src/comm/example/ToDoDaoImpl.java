@@ -40,17 +40,17 @@ public class ToDoDaoImpl implements ToDoDao {
 	
 			Iterator<ToDo> iterator=toDoList.iterator();
 			
-			while(iterator.hasNext())
+			for(ToDo t:toDoList)
 			{
-				toDo=iterator.next();
-				if(toDo.getToDoId()==(toDoId))
+				if(toDo.getToDoId().equals(toDoId))
 				{
-					
-					System.out.println(toDo.getToDoId());
+					toDo=t;
+					System.out.println("found.");
 					break;
+					
 				}
 			}
-		
+			
 		
 		return toDo;
 	}
