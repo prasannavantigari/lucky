@@ -36,13 +36,12 @@ public class ToDoDaoImpl implements ToDoDao {
 
 	@Override
 	public ToDo findById(String toDoId) {
-		// TODO Auto-generated method stub
-	
+		// TODO Auto-generated method stub	
 			Iterator<ToDo> iterator=toDoList.iterator();
 			
 			for(ToDo t:toDoList)
 			{
-				if(toDo.getToDoId().equals(toDoId))
+				if((toDo).getToDoId().equals(toDoId))
 				{
 					toDo=t;
 					System.out.println("found.");
