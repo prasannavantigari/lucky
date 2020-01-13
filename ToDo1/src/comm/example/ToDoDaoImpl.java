@@ -41,7 +41,7 @@ public class ToDoDaoImpl implements ToDoDao {
 			
 			for(ToDo t:toDoList)
 			{
-				if((toDo).getToDo().equals(toDoId))
+				if((toDo).getToDoId().equals(toDoId))
 				{
 					toDo=t;
 					System.out.println("found.");
