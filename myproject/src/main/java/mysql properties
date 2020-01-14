@@ -1,0 +1,4 @@
+  
+jdbc.connection.url=jdbc:h2:tcp://localhost/~/test
+jdbc.connection.user=sa
+jdbc.connection.password=
