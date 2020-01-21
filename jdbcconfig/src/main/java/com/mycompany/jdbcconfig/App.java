@@ -10,9 +10,9 @@ import com.mycompany.javaconfig.model.Customer;
  * Hello world!
  *
  */
-public class App {
-
-	public static void main( String[] args )
+public class App 
+{
+    public static void main( String[] args )
     {
        AnnotationConfigApplicationContext context=
     		   new AnnotationConfigApplicationContext(CustomerConfig.class);
