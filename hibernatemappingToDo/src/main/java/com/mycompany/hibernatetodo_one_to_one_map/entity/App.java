@@ -16,8 +16,8 @@ public class App {
 				.configure().addAnnotatedClass(ToDo.class)
 				.addAnnotatedClass(Task.class).buildSessionFactory();
 		Session session=factory.openSession();
-		ToDo todo=new ToDo("john", "12-05-2013");
-		todo.setTask(new Task("designing", "williams"));
+		ToDo todo=new ToDo("lucky", "12-05-2013");
+		todo.setTask(new Task("designing", "Prassu"));
 		session.getTransaction().begin();
 		session.save(todo);
 		session.getTransaction().commit();
