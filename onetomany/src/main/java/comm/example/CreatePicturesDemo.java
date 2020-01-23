@@ -33,13 +33,19 @@ public static void main(String[] args) {
 			MyImage image=new MyImage("https:??url1");
 			Picture tempPicture = new Picture("prassu");
 			Picture tempPicture1 = new Picture("suppu");
+			Picture tempPicture2 = new Picture("navii");
+			Picture tempPicture3 = new Picture("sravs");
 			tempAlbum.add(tempPicture);
 			tempAlbum.add(tempPicture1);
+			tempAlbum.add(tempPicture2);
+			tempAlbum.add(tempPicture3);
 			tempAlbum.setImage(image);
 	
 			session.getTransaction().begin();
 			session.save(tempPicture);
 			session.save(tempPicture1);
+			session.save(tempPicture2);
+			session.save(tempPicture3);
 			session.save(tempAlbum);
 			session.getTransaction().commit();
 			
