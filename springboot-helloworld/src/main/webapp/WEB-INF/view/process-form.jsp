@@ -10,5 +10,8 @@
 <body>
 
 Student First Name:${student.firstName}
+<br>
+Student Last Name:${student.lastName}
+<br>
 </body>
 </html>

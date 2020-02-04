@@ -15,7 +15,7 @@
     <form:input path="firstName" />
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">First Name</label>
+    <label for="exampleFormControlInput1">Last Name</label>
     <form:input  path="lastName"/>
   </div>
   <div class="form-group">
