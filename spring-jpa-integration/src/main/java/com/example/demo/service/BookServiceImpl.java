@@ -47,4 +47,36 @@ public class BookServiceImpl implements BookService {
 		return bookDAO.save(book);
 	}
 
+	@Override
+	public void deleteBookById(Integer bookId) {
+		bookDAO.deleteById(bookId);
+		
+	}
+
+	@Override
+	public void deleteAll() {
+		bookDAO.deleteAll();
+		
+	}
+
+	@Override
+	public List<Book> findByAuthor(String author) {
+		// TODO Auto-generated method stub
+		return bookDAO.findByAuthor(author);
+	}
+
+	@Override
+	public List<Book> findByBookName(String bookName) {
+		// TODO Auto-generated method stub
+		return bookDAO.findByBookName(bookName);
+	}
+
+	@Override
+	public List<Book> findByAuthorAndBookName(String author, String bookName) {
+		// TODO Auto-generated method stub
+		return bookDAO.findByAuthorAndBookName(author, bookName);
+	}
+
+
+
 }
