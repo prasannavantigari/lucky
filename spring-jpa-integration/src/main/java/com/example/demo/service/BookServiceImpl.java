@@ -15,7 +15,6 @@ import com.example.demo.entity.Book;
 @EnableTransactionManagement
 public class BookServiceImpl implements BookService {
 
-
 	private BookDAO bookDAO;
 	
 	
@@ -38,7 +37,14 @@ public class BookServiceImpl implements BookService {
 	public Optional<Book>  getBookById(Integer bookId) {
 		
 		Optional<Book> book=bookDAO.findById(bookId);
+		
 		return book;
+	}
+
+	@Override
+	public Book createBook(Book book) {
+		// TODO Auto-generated method stub
+		return bookDAO.save(book);
 	}
 
 }
